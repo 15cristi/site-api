@@ -35,9 +35,11 @@ public class SecurityConfig {
                         .requestMatchers("/api/user/**").permitAll()
                         .anyRequest().authenticated()
                 )
+
                 .httpBasic(Customizer.withDefaults());
         return http.build();
     }
+
 
     @Bean
     public AuthenticationProvider authenticationProvider() {
