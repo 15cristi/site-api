@@ -23,5 +23,14 @@ public class User {
     @Column(nullable = false)
     private String role = "ROLE_USER";
 
-    // getters + setters...
+
+    @Column(name = "full_name")
+    private String fullName;
+
+    @Column(name = "license_plate")
+    private String licensePlate;
+
+    @Column(name = "profile_image_url")
+    private String profileImageUrl;
+
 }
